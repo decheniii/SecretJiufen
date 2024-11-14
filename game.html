@@ -61,8 +61,8 @@ tw-passage {
 
 /* Markdown 標題樣式 (#) */
 tw-passage h1 {
-  font-size: 1.4em; /* 調大標題尺寸 */
-  color: var(--highlight-gold); /* 使用突出顏色 */
+  font-size: 1.4em;
+  color: var(--highlight-gold);
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   font-weight: normal;
@@ -162,37 +162,6 @@ tw-passage::after {
   border-top: none;
 }
 
-/* 移動設備優化 */
-@media screen and (max-width: 600px) {
-  tw-story {
-    font-size: 1.2rem;
-  }
-
-  tw-passage {
-    width: 95%;
-    padding: 1rem;
-    margin: 0.5rem auto;
-  }
-
-  .passage-title {
-    font-size: 1em;
-  }
-
-  tw-passage h1 {
-    font-size: 1.3em;
-  }
-
-  tw-passage p {
-    font-size: 0.95em;
-  }
-
-  .choice-link, tw-link {
-    padding: 0.2em 0.5em;
-    margin: 0.08em 0;
-    font-size: 0.9em;
-  }
-}
-
 /* 時間和位置標記樣式 */
 .time-marker, .location-marker {
   color: var(--egyptian-gold);
@@ -209,6 +178,51 @@ hr {
   border-top: 1px solid var(--border-gold);
   margin: 0.6em 0;
   opacity: 0.5;
+}
+
+/* 移動設備優化 */
+@media screen and (max-width: 600px) {
+  tw-story {
+    font-size: 1rem;
+  }
+
+  tw-passage {
+    width: 95%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .passage-title {
+    font-size: 0.9em;
+  }
+
+  tw-passage h1 {
+    font-size: 1.1em;
+  }
+
+  tw-passage p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .choice-link, tw-link {
+    padding: 0.2em 0.5em;
+    margin: 0.08em 0;
+    font-size: 0.85em;
+  }
+
+  .time-marker, .location-marker {
+    font-size: 0.8em;
+  }
+
+  .highlight {
+    font-size: 0.9em;
+  }
+
+  .highlight-box {
+    font-size: 0.9em;
+    padding: 0.4em 0.8em;
+  }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="打開信封" tags="" position="400,200" size="100,100">#開始旅程
 
 週四的晚餐時光，餐廳的燈光溫暖而柔和。
@@ -2910,13 +2924,10 @@ CHLIV獨特的咖啡藝術與文化魅力。
 
 [[下一步-&gt;等待週日後點擊下一步]]</tw-passagedata><tw-passagedata pid="110" name="啟程" tags="" position="400,75" size="100,100">#您收到了一封神秘的信件。
 
-&lt;p&gt;&lt;span class=&quot;highlight&quot;&gt;「親愛的冒險者，&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;山城的秘密等待著被揭開。在霧氣瀰漫的山間，藏著一段無人知曉的歷史。如果你願意接受這個挑戰，請詳閱以下說明，記住，選擇權在你手中。」&lt;/p&gt;
+「親愛的冒險者，山城的秘密等待著被揭開。在霧氣瀰漫的山間，藏著一段無人知曉的歷史。如果你願意接受這個挑戰，請詳閱以下說明，記住，選擇權在你手中。」&lt;/p&gt;
     &lt;p class=&quot;highlight-glow&quot;&gt;基本操作說明：&lt;/p&gt;&lt;div class=&quot;highlight-box&quot;&gt;在這個互動故事中，你將透過做出選擇來推進劇情。
       請仔細閱讀每個場景描述，選擇你認為合適的選項。
-    &lt;/div&gt;
-
-  &lt;p class=&quot;highlight-glow&quot;&gt;你準備好展開這趟神秘之旅了嗎？&lt;/p&gt;[[開始你的旅程-&gt;打開信封]]</tw-passagedata></tw-storydata>
+    &lt;/div&gt;  &lt;p class=&quot;highlight-glow&quot;&gt;你準備好展開這趟神秘之旅了嗎？&lt;/p&gt;[[開始你的旅程-&gt;打開信封]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
