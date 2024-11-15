@@ -3,151 +3,154 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>山城之旅</title>
+<title>山城之旅 1</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 山城之旅.</tw-noscript></noscript></tw-story>
-<tw-storydata name="山城之旅" startnode="110" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="ACE262A4-F49A-49E3-9AA3-BBC0F629C738" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* 全局設定 */
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 山城之旅 1.</tw-noscript></noscript></tw-story>
+<tw-storydata name="山城之旅 1" startnode="109" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="eb60d795-bb21-4a2d-9651-7aa482b1bd2d" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ===== 全局顏色變數設定 ===== */
 :root {
-  --egyptian-gold: #c6aa81;
-  --dark-bg: rgba(20, 20, 20, 0.95);
-  --darker-gold: #9c855d;
-  --visited-gold: #c67c51;
-  --border-gold: rgba(198, 170, 129, 0.6);
-  --highlight-gold: #e3c496;
+  --egyptian-gold: #c6aa81;       /* 主要金色 */
+  --dark-bg: rgba(20, 20, 20, 0.85); /* 背景色（調整透明度） */
+  --darker-gold: #9c855d;         /* 深金色 */
+  --visited-gold: #c67c51;        /* 已訪問連結的金色 */
+  --border-gold: rgba(198, 170, 129, 0.6); /* 邊框金色 */
+  --highlight-gold: #e3c496;      /* 強調用金色 */
 }
 
-/* 背景圖片設定 */
+/* ===== 主背景設定 ===== */
 tw-story {
+  /* 背景圖層設定：深色漸層遮罩 + 背景圖片 */
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
   ), url('https://i.ibb.co/tCzmsYz/jfbg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  padding: 1rem;
-  color: var(--egyptian-gold);
-  font-family: "Times New Roman", serif;
-  font-size: 1.3rem;
+  background-size: cover;          /* 背景圖片填滿 */
+  background-position: center;     /* 背景圖片置中 */
+  background-attachment: fixed;    /* 背景固定 */
+  min-height: 100vh;              /* 最小高度為視窗高度 */
+  padding: 1rem;                  /* 內邊距 */
+  color: var(--egyptian-gold);    /* 文字顏色 */
+  font-family: "Times New Roman", serif; /* 字體 */
+  font-size: 1.3rem;              /* 基本文字大小 */
 }
 
-/* 段落容器 */
+/* ===== 文本內容容器 ===== */
 tw-passage {
-  background-color: var(--dark-bg);
-  padding: 1.3rem;
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid var(--border-gold);
-  position: relative;
-  box-shadow: 0 0 20px rgba(198, 170, 129, 0.2);
+  background-color: var(--dark-bg); /* 半透明背景 */
+  padding: 1.3rem;                /* 內邊距 */
+  width: 90%;                     /* 寬度 */
+  max-width: 600px;               /* 最大寬度 */
+  margin: 0 auto;                 /* 置中 */
+  border: 1px solid var(--border-gold); /* 金色邊框 */
+  position: relative;             /* 相對定位（用於裝飾元素） */
+  box-shadow: 0 0 20px rgba(198, 170, 129, 0.2); /* 陰影效果 */
 }
 
-/* 標題樣式 */
+/* ===== 段落標題樣式 ===== */
 .passage-title {
-  font-size: 1.1em;
-  color: var(--egyptian-gold);
-  margin-bottom: 0.8em;
-  text-align: center;
-  font-weight: normal;
-  letter-spacing: 1.5px;
-  border-bottom: 1px solid var(--border-gold);
-  padding-bottom: 0.3em;
+  font-size: 1.1em;              /* 標題大小 */
+  color: var(--egyptian-gold);    /* 標題顏色 */
+  margin-bottom: 0.8em;          /* 下方間距 */
+  text-align: center;            /* 置中對齊 */
+  font-weight: normal;           /* 字重 */
+  letter-spacing: 1.5px;         /* 字間距 */
+  border-bottom: 1px solid var(--border-gold); /* 底部邊框 */
+  padding-bottom: 0.3em;         /* 底部內邊距 */
 }
 
-/* Markdown 標題樣式 (#) */
+/* ===== Markdown 標題樣式 (#) ===== */
 tw-passage h1 {
-  font-size: 1.4em;
-  color: var(--highlight-gold);
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  font-weight: normal;
-  letter-spacing: 1px;
+  font-size: 1.4em;              /* 標題大小 */
+  color: var(--highlight-gold);   /* 標題顏色 */
+  margin-bottom: 0.5em;          /* 下方間距 */
+  margin-top: 0.5em;             /* 上方間距 */
+  font-weight: normal;           /* 字重 */
+  letter-spacing: 1px;           /* 字間距 */
 }
 
-/* 文字樣式 */
+/* ===== 一般段落文字樣式 ===== */
 tw-passage p {
-  color: var(--egyptian-gold);
-  line-height: 1.5;
-  margin-bottom: 0.8em;
-  font-size: 1em;
+  color: var(--egyptian-gold);    /* 文字顏色 */
+  line-height: 1.5;              /* 行高 */
+  margin-bottom: 0.8em;          /* 下方間距 */
+  font-size: 1em;                /* 文字大小 */
 }
 
-/* 選項按鈕 */
+/* ===== 選項按鈕樣式 ===== */
 .choice-link, tw-link {
-  display: block;
-  width: 100%;
-  padding: 0.2em 0.5em;
-  margin: 0.08em 0;
-  background-color: transparent;
-  color: var(--egyptian-gold);
-  text-decoration: none;
-  border: 1px solid var(--border-gold);
-  transition: all 0.3s ease;
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  font-size: 0.95em;
+  display: block;                /* 區塊顯示 */
+  width: 100%;                   /* 寬度 */
+  padding: 0.2em 0.5em;          /* 內邊距 */
+  margin: 0.08em 0;              /* 外邊距 */
+  background-color: transparent; /* 透明背景 */
+  color: var(--egyptian-gold);   /* 文字顏色 */
+  text-decoration: none;         /* 移除底線 */
+  border: 1px solid var(--border-gold); /* 邊框 */
+  transition: all 0.3s ease;     /* 過渡效果 */
+  text-align: center;            /* 文字置中 */
+  position: relative;            /* 相對定位 */
+  cursor: pointer;               /* 滑鼠指標 */
+  font-size: 0.95em;             /* 文字大小 */
 }
 
-/* 已訪問的連結樣式 */
+/* ===== 已訪問連結樣式 ===== */
 .choice-link:visited, 
 tw-link:visited {
-  color: var(--visited-gold);
-  border-color: rgba(198, 124, 81, 0.6);
+  color: var(--visited-gold);     /* 已訪問顏色 */
+  border-color: rgba(198, 124, 81, 0.6); /* 已訪問邊框顏色 */
 }
 
-/* 按鈕懸停效果 */
+/* ===== 按鈕懸停效果 ===== */
 .choice-link:hover, 
 tw-link:hover {
-  background-color: var(--egyptian-gold);
-  color: #000;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(198, 170, 129, 0.3);
+  background-color: var(--egyptian-gold); /* 懸停背景色 */
+  color: #000;                   /* 懸停文字色 */
+  transform: translateY(-1px);    /* 上移效果 */
+  box-shadow: 0 2px 4px rgba(198, 170, 129, 0.3); /* 懸停陰影 */
 }
 
-/* 已訪問按鈕的懸停效果 */
+/* ===== 已訪問按鈕的懸停效果 ===== */
 .choice-link:visited:hover, 
 tw-link:visited:hover {
-  background-color: var(--visited-gold);
-  border-color: var(--visited-gold);
-  color: #000;
+  background-color: var(--visited-gold); /* 已訪問懸停背景 */
+  border-color: var(--visited-gold);     /* 已訪問懸停邊框 */
+  color: #000;                   /* 文字顏色 */
 }
 
-/* Highlight 文字效果 */
+/* ===== Highlight 效果 ===== */
 .highlight {
-  color: var(--highlight-gold);
-  font-weight: bold;
-  text-shadow: 0 0 2px rgba(227, 196, 150, 0.3);
+  color: var(--highlight-gold);   /* 強調文字顏色 */
+  font-weight: bold;             /* 粗體 */
+  text-shadow: 0 0 2px rgba(227, 196, 150, 0.3); /* 文字陰影 */
 }
 
-/* 特殊 Highlight 效果 */
+/* ===== 特殊 Highlight 框框效果 ===== */
 .highlight-box {
-  background: rgba(227, 196, 150, 0.1);
-  border-left: 3px solid var(--highlight-gold);
-  padding: 0.5em 1em;
-  margin: 0.5em 0;
+  background: rgba(227, 196, 150, 0.1); /* 半透明背景 */
+  border-left: 3px solid var(--highlight-gold); /* 左側邊框 */
+  padding: 0.5em 1em;            /* 內邊距 */
+  margin: 0.5em 0;               /* 外邊距 */
 }
 
+/* ===== 發光文字效果 ===== */
 .highlight-glow {
-  color: var(--highlight-gold);
-  text-shadow: 0 0 5px rgba(227, 196, 150, 0.5);
+  color: var(--highlight-gold);   /* 文字顏色 */
+  text-shadow: 0 0 5px rgba(227, 196, 150, 0.5); /* 發光效果 */
 }
 
-/* 裝飾元素 */
+/* ===== 裝飾性角落元素 ===== */
 tw-passage::before,
 tw-passage::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border: 1px solid var(--border-gold);
+  content: '';                   /* 空內容 */
+  position: absolute;            /* 絕對定位 */
+  width: 6px;                    /* 寬度 */
+  height: 6px;                   /* 高度 */
+  border: 1px solid var(--border-gold); /* 邊框 */
 }
 
+/* 左上角裝飾 */
 tw-passage::before {
   top: -1px;
   left: -1px;
@@ -155,6 +158,7 @@ tw-passage::before {
   border-bottom: none;
 }
 
+/* 右下角裝飾 */
 tw-passage::after {
   bottom: -1px;
   right: -1px;
@@ -162,63 +166,72 @@ tw-passage::after {
   border-top: none;
 }
 
-/* 時間和位置標記樣式 */
+/* ===== 時間和位置標記樣式 ===== */
 .time-marker, .location-marker {
-  color: var(--egyptian-gold);
-  font-style: italic;
-  margin-bottom: 0.6em;
-  padding-left: 0.8em;
-  border-left: 2px solid var(--border-gold);
-  font-size: 0.9em;
+  color: var(--egyptian-gold);    /* 文字顏色 */
+  font-style: italic;            /* 斜體 */
+  margin-bottom: 0.6em;          /* 下方間距 */
+  padding-left: 0.8em;           /* 左側內邊距 */
+  border-left: 2px solid var(--border-gold); /* 左側邊框 */
+  font-size: 0.9em;              /* 文字大小 */
 }
 
-/* 分隔線 */
+/* ===== 分隔線樣式 ===== */
 hr {
-  border: none;
-  border-top: 1px solid var(--border-gold);
-  margin: 0.6em 0;
-  opacity: 0.5;
+  border: none;                  /* 移除預設邊框 */
+  border-top: 1px solid var(--border-gold); /* 上邊框 */
+  margin: 0.6em 0;               /* 外邊距 */
+  opacity: 0.5;                  /* 透明度 */
 }
 
-/* 移動設備優化 */
+/* ===== 移動設備適配 ===== */
 @media screen and (max-width: 600px) {
+  /* 手機版基本文字大小 */
   tw-story {
     font-size: 1rem;
   }
 
+  /* 手機版容器調整 */
   tw-passage {
     width: 95%;
     padding: 1rem;
     margin: 0.5rem auto;
   }
 
+  /* 手機版標題大小 */
   .passage-title {
     font-size: 0.9em;
   }
 
+  /* 手機版 h1 標題大小 */
   tw-passage h1 {
     font-size: 1.1em;
   }
 
+  /* 手機版段落文字 */
   tw-passage p {
     font-size: 0.9em;
     line-height: 1.4;
   }
 
+  /* 手機版選項按鈕 */
   .choice-link, tw-link {
     padding: 0.2em 0.5em;
     margin: 0.08em 0;
     font-size: 0.85em;
   }
 
+  /* 手機版標記文字 */
   .time-marker, .location-marker {
     font-size: 0.8em;
   }
 
+  /* 手機版 highlight */
   .highlight {
     font-size: 0.9em;
   }
 
+  /* 手機版 highlight 框 */
   .highlight-box {
     font-size: 0.9em;
     padding: 0.4em 0.8em;
@@ -227,13 +240,13 @@ hr {
 
 週四的晚餐時光，餐廳的燈光溫暖而柔和。
 飯後甜點的香氣還縈繞在空氣中，
-你，鄒少筠，正準備收拾餐具時，
+你，OOO，正準備收拾餐具時，
 一個精緻的信封悄然出現在桌上。
 
 ...
 
 信封上用燙金字體寫著：
-&lt;p class=&quot;highlight-glow&quot;&gt;&quot;給親愛的少筠，
+&lt;p class=&quot;highlight-glow&quot;&gt;&quot;給親愛的ＯＯ，
  妳已在完美的時刻打開這份神秘禮物。&quot;&lt;/p&gt;
  ...
  
@@ -335,7 +348,7 @@ hr {
 
 ...
 
-&lt;p class=&quot;highlight-glow&quot;&gt;&quot;少筠，生日快樂！&quot;&lt;/p&gt;...
+&lt;p class=&quot;highlight-glow&quot;&gt;&quot;ＯＯ，生日快樂！&quot;&lt;/p&gt;...
 
 ...
 
@@ -495,7 +508,7 @@ hr {
 □ 充電器、行動電源
 □ 輕便的衣物，做好過夜準備
 
-少筠，你準備好迎接這場冒險了嗎？
+ＯＯ，你準備好迎接這場冒險了嗎？
 
 [[是的，讓我們開始-&gt;雨中騎行]]
 [[再給我一點時間-&gt;多睡五分鐘]]</tw-passagedata><tw-passagedata pid="14" name="多睡五分鐘" tags="" position="900,450" size="100,100"># 溫暖的被窩
@@ -1121,7 +1134,7 @@ C. 候車剪影：
 • 建議緊握扶手前進
 • 注意腳下水漥
 
-[[前往海論-&gt;抵達旅社]]</tw-passagedata><tw-passagedata pid="39" name="咖啡選擇" tags="" position="825,2300" size="100,100"># 咖啡香的誘惑
+[[前往ＯＯ-&gt;抵達旅社]]</tw-passagedata><tw-passagedata pid="39" name="咖啡選擇" tags="" position="825,2300" size="100,100"># 咖啡香的誘惑
 
 在雨中，
 咖啡的香氣特別誘人。
@@ -2409,7 +2422,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 [[返回任務列表-&gt;阿妹茶樓任務清單]]</tw-passagedata><tw-passagedata pid="83" name="抵達旅社" tags="" position="1000,3225" size="100,100">#抵達海論
 
 在風雨中，你看見不遠處那棟優雅的建築，
-那就是你今晚的歸處 —— 九份海論。
+那就是你今晚的歸處 —— 九份ＯＯ。
 
 這間位於老街尾端的新穎民宿，
 將是你今晚休憩的地方。
@@ -2578,7 +2591,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 [[茶香之夜]]
 [[微醺浪漫]]
 [[夜晚漫步]]
-[[返回海論民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="92" name="返回民宿" tags="" position="1275,3975" size="100,100">#歸途：回到溫暖的歇腳處
+[[返回ＯＯ民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="92" name="返回民宿" tags="" position="1275,3975" size="100,100">#歸途：回到溫暖的歇腳處
 
 燈火在身後漸漸遠去。
 你和男友並肩走在石階上，
@@ -2588,7 +2601,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 霧氣在傘沿凝結成細小的水珠，
 在燈光下閃爍著溫柔的光芒。
 
-[[回到海論]]</tw-passagedata><tw-passagedata pid="93" name="夜晚漫步" tags="" position="1075,4200" size="100,100">#夜晚漫步
+[[回到ＯＯ]]</tw-passagedata><tw-passagedata pid="93" name="夜晚漫步" tags="" position="1075,4200" size="100,100">#夜晚漫步
 
 雨絲斜斜地墜落在石階上，
 燈籠在風中輕輕搖曳，
@@ -2765,7 +2778,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
    • 避免淋雨感冒
 
 [[繼續夜遊九份-&gt;夜晚漫步]]
-[[返回海論民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="99" name="茶香繚繞的夜晚時光" tags="" position="550,4075" size="100,100"># 茶香繚繞的夜晚時光
+[[返回ＯＯ民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="99" name="茶香繚繞的夜晚時光" tags="" position="550,4075" size="100,100"># 茶香繚繞的夜晚時光
 
 
 窗外的雨聲與茶香交織，
@@ -2803,7 +2816,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
    結束今天的旅程。
 
 [[繼續夜遊九份-&gt;夜晚漫步]]
-[[返回海論民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="101" name="品茶" tags="" position="425,4200" size="100,100">#品茶
+[[返回ＯＯ民宿-&gt;返回民宿]]</tw-passagedata><tw-passagedata pid="101" name="品茶" tags="" position="425,4200" size="100,100">#品茶
 
 熱水注入紫砂壺，
 茶葉在溫潤的懷抱中舒展，
@@ -2825,16 +2838,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 反而讓燈光顯得更加夢幻，
 每一盞燈都像是一個未訴的故事。
 
-[[下一步-&gt;下一步茶]]</tw-passagedata><tw-passagedata pid="102" name="回到海論" tags="" position="1275,4100" size="100,100">#回到海論
-
-推開房門的瞬間，
-
-陽台的躺椅還留著下午的餘溫，
-但遠處的基隆港夜景多了分更深的夜色。
-
-你整個人陷入柔軟的床鋪中。
-
-[[休息之後]]</tw-passagedata><tw-passagedata pid="103" name="休息之後" tags="" position="1275,4225" size="100,100">
+[[下一步-&gt;下一步茶]]</tw-passagedata><tw-passagedata pid="102" name="休息之後" tags="" position="1275,4225" size="100,100">
 熱水沖去一天的疲憊，
 換上柔軟的睡衣，
 你窩在床上翻看今天拍的照片、影片。
@@ -2843,7 +2847,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 ...
 
 [[...]]
-</tw-passagedata><tw-passagedata pid="104" name="..." tags="" position="1275,4350" size="100,100">你心緒流轉
+</tw-passagedata><tw-passagedata pid="103" name="..." tags="" position="1275,4350" size="100,100">你心緒流轉
 
 明天就要回去上班了，
 想到這裡，心頭泛起一絲不捨。
@@ -2858,7 +2862,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 依然美好的回憶，
 甚至更深刻。
 
-[[睡前]]</tw-passagedata><tw-passagedata pid="105" name="睡前" tags="" position="1275,4475" size="100,100">睡前，你準備在手機上設定鬧鐘。
+[[睡前]]</tw-passagedata><tw-passagedata pid="104" name="睡前" tags="" position="1275,4475" size="100,100">睡前，你準備在手機上設定鬧鐘。
 
 ...
 ...
@@ -2880,7 +2884,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 
 【不看日出】
 &quot;明天還要上班，多睡一會兒吧。&quot;
-[[設定七點鬧鐘-&gt;慵懶早晨]]</tw-passagedata><tw-passagedata pid="106" name="早起日出" tags="" position="1275,4600" size="100,100">
+[[設定七點鬧鐘-&gt;慵懶早晨]]</tw-passagedata><tw-passagedata pid="105" name="早起日出" tags="" position="1275,4600" size="100,100">
 你想著明天清晨，
 太陽會從基隆嶼緩緩升起，
 為這趟旅程，
@@ -2897,7 +2901,7 @@ CHLIV獨特的咖啡藝術與文化魅力。
 在九份的夜色中，
 慢慢入夢。
 
-[[晚安]]</tw-passagedata><tw-passagedata pid="107" name="慵懶早晨" tags="" position="1400,4600" size="100,100">
+[[晚安]]</tw-passagedata><tw-passagedata pid="106" name="慵懶早晨" tags="" position="1400,4600" size="100,100">
 你想著明天清晨，
 太陽會從基隆嶼緩緩升起，
 為這趟旅程，
@@ -2914,20 +2918,29 @@ CHLIV獨特的咖啡藝術與文化魅力。
 在九份的夜色中，
 慢慢入夢。
 
-[[晚安]]</tw-passagedata><tw-passagedata pid="108" name="晚安" tags="" position="1400,4725" size="100,100">夜深了，
+[[晚安]]</tw-passagedata><tw-passagedata pid="107" name="晚安" tags="" position="1400,4725" size="100,100">夜深了，
 九份的故事仍在繼續。
 而你的故事，
 也在這裡，
-留下了最美好的一頁。</tw-passagedata><tw-passagedata pid="109" name="等待" tags="" position="1000,200" size="100,100">...
+留下了最美好的一頁。</tw-passagedata><tw-passagedata pid="108" name="等待" tags="" position="1000,200" size="100,100">...
 ...
 
 
-[[下一步-&gt;等待週日後點擊下一步]]</tw-passagedata><tw-passagedata pid="110" name="啟程" tags="" position="400,75" size="100,100">#您收到了一封神秘的信件。
+[[下一步-&gt;等待週日後點擊下一步]]</tw-passagedata><tw-passagedata pid="109" name="啟程" tags="" position="400,75" size="100,100">#您收到了一封神秘的信件。
 
 「致打開信封的你，山城的秘密等待著被揭開。在霧氣瀰漫的山間，藏著一段故事等著你去探尋。如果你願意接受這個挑戰，請詳閱以下說明，記住，選擇權在你手中。」&lt;/p&gt;
     &lt;p class=&quot;highlight-glow&quot;&gt;基本操作說明：&lt;/p&gt;&lt;div class=&quot;highlight-box&quot;&gt;在這個互動故事中，你將透過做出選擇來推進劇情。
       請仔細閱讀每個場景描述，選擇你認為合適的選項。
-    &lt;/div&gt;  &lt;p class=&quot;highlight-glow&quot;&gt;你準備好展開這趟神秘之旅了嗎？&lt;/p&gt;[[開始你的旅程-&gt;打開信封]]</tw-passagedata></tw-storydata>
+    &lt;/div&gt;  &lt;p class=&quot;highlight-glow&quot;&gt;你準備好展開這趟神秘之旅了嗎？&lt;/p&gt;[[開始你的旅程-&gt;打開信封]]</tw-passagedata><tw-passagedata pid="110" name="回到ＯＯ" tags="" position="1400,4100" size="100,100">#回到ＯＯ
+
+推開房門的瞬間，
+
+陽台的躺椅還留著下午的餘溫，
+但遠處的基隆港夜景多了分更深的夜色。
+
+你整個人陷入柔軟的床鋪中。
+
+[[休息之後]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
